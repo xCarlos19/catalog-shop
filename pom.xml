@@ -8,6 +8,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+
     <properties>
         <!-- automatically run annotation processors within the incremental compilation -->
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
@@ -19,7 +20,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.6.0</version>
-        <relativePath />
+
         <!-- lookup parent from repository -->
     </parent>
 
@@ -27,7 +28,7 @@
     <modules>
         <module>CATALOG.boot</module>
         <module>CATALOG.application</module>
-        <module>CATALOG.infraestructure</module>
+        <module>CATALOG.infrastructure</module>
         <module>CATALOG.domain</module>
         <module>CATALOG.contract</module>
     </modules>
@@ -124,7 +125,7 @@
 
             <dependency>
                 <groupId>com.shop</groupId>
-                <artifactId>CATALOG.infraestructure</artifactId>
+                <artifactId>CATALOG.infrastructure</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -152,9 +153,9 @@
                         </dependency>
                     </dependencies>
                     <configuration>
-                        <configLocation>${project.parent.relativePath}/src/main/config/checkstyle-java-google-style.xml
+                        <configLocation>/src/main/config/checkstyle-java-google-style.xml
                         </configLocation>
-                        <suppressionsLocation>${project.parent.relativePath}/src/main/config/checkstyle-suppressions.xml
+                        <suppressionsLocation>/src/main/config/checkstyle-suppressions.xml
                         </suppressionsLocation>
                         <failOnViolation>true</failOnViolation>
                         <includeTestSourceDirectory>true</includeTestSourceDirectory>

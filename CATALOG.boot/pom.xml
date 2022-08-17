@@ -26,7 +26,7 @@
 
         <dependency>
             <groupId>com.shop</groupId>
-            <artifactId>CATALOG.infraestructure</artifactId>
+            <artifactId>CATALOG.infrastructure</artifactId>
         </dependency>
 
         <dependency>
