@@ -1,5 +1,5 @@
 # catalog-shop
-Simple API which shows the diferents products of an online shop. 
+Simple API which shows the diferents products of an online shop. It includes the posibility to create, update and delete items.
 
 Technologies
 
